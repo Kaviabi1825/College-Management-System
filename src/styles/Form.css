@@ -1,0 +1,146 @@
+/* Form.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-container {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow-y: auto;
+}
+
+.login-form-container {
+  flex: 1; /* Increase the flex value to make the right container larger */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.right-side {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Background image style */
+.background-image {
+  background-image: url('https://thumbs.dreamstime.com/b/fall-background-autumn-colorful-leaves-fall-background-autumn-colorful-leaves-sun-flares-99090759.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+/* Additional styling for the form container */
+.login-form-container {
+  flex: 3; /* Increase the width to 3 to make it larger */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.login-form-container:hover:before {
+  opacity: 1;
+}
+
+/* Add some styling for the buttons */
+button:first-child {
+  background-color: #5bc0de;
+}
+
+button:first-child:hover {
+  background-color: #31b0d5;
+}
+
+/* Styling for the announcements in the left container */
+.announcement-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.announcement-item p {
+  margin: 0;
+  color: #333;
+}
+
+/* Styling for the delete button */
+button[type="button"] {
+  background-color: #1e6eef;
+}
+
+button[type="button"]:hover {
+  background-color: #c9302c;
+}
